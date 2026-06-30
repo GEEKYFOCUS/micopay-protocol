@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "build:dev": "tsc && vite build --mode development",
-    "build:testnet": "tsc && vite build --mode testnet",
-    "build:prod": "tsc && vite build --mode production",
+    "dev": "node init && vite",
+    "build": "node init && tsc && vite build",
+    "build:dev": "node init && tsc && vite build --mode development",
+    "build:testnet": "node init && tsc && vite build --mode testnet",
+    "build:prod": "node init && tsc && vite build --mode production",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
